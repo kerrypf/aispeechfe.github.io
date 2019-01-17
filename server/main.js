@@ -1,7 +1,13 @@
 // const inquirer = require("./lib/inquirer")
 const commands = require("./lib/commands")
-const octokit = require('@octokit/rest')()
+const git = require("simple-git")()
+const file = require('./lib/files')
+const MarkdownIt = require('markdown-it')
+
+const md = new MarkdownIt()
 // const chalk = require("chalk")
+
+
 
 // Compare: https://developer.github.com/v3/repos/#list-organization-repositories
 // octokit.repos.listForOrg({
@@ -48,13 +54,52 @@ const octokit = require('@octokit/rest')()
 // console.log(1)
 // console.log(chalk.red('Authentication already exists!'))
 
-commands.login()
+// commands.login()
 job()
+
+
+// const rootpath = file.getCurrentDirectoryBase()
+// file.removefile('1.txt')
+
+// console.log( file.readFileSync('./docs/other/test.2.md'))
+
+// filemange([{
+//   filename: 'docs/other/test.1.md',
+//   status: 'removed'
+// }, {
+//   filename: 'docs/other/test.2.md',
+//   status: 'added'
+// }])
+
+setInterval(() => {
+  job()
+}, 60*5)
 
 async function job() {
   const check = await commands.checkbuild()
   if (check.build) {
     const detail = await commands.getCommitDetail(check.sha)
-    // detail.files
+    await git.pull('origin', 'master')
+    filemange(detail.files)
+    git.commit('Initial Commit').addRemote('origin', url).push('origin', 'master')
   }
+}
+
+function filemange(files) {
+  files.map(m => {
+    m.htmlfilename = m.filename.replace('docs', './files').replace('.md', '.html')
+    if (m.status == 'removed') {
+      file.removefile(m.htmlfilename)
+    } else {
+      file.removefile(m.htmlfilename)
+      let data = file.readFileSync(m.filename.replace('docs', './docs'))
+      let content = md.render(data.toString())
+      let html = layout(content)
+      file.writeFileSync(m.htmlfilename, html)
+    }
+  })
+}
+
+function layout(content) {
+  return content
 }
