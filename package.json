@@ -1,0 +1,32 @@
+{
+  "name": "aispeechfe.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server/main.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "server": "node server/main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aispeechfe/aispeechfe.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aispeechfe/aispeechfe.github.io/issues"
+  },
+  "homepage": "https://github.com/aispeechfe/aispeechfe.github.io#readme",
+  "devDependencies": {},
+  "dependencies": {
+    "@octokit/rest": "^16.9.0",
+    "chalk": "^2.4.2",
+    "clui": "^0.3.6",
+    "configstore": "^4.0.0",
+    "inquirer": "^6.2.1",
+    "moment": "^2.23.0"
+  }
+}
