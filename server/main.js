@@ -2,11 +2,16 @@ const commands = require("./commands")
 const git = require("./lib/git")
 
 commands.login().then(async () => {
-  await git.init()
+  // await git.init()
   const gitclient = git.getInstance()
-  await gitclient.pull('origin', 'master')
+  // await gitclient.pull('origin', 'master')
   // job()
-  gitclient.add('./*').commit('Initial Commit').push('origin', 'master')
+  // gitclient.add('./*').commit('Initial Commit').push('origin', 'master')
+  gitclient.init()
+     .add('./*')
+     .commit("first commit!")
+     .addRemote('origin', 'https://github.com/aispeechfe/aispeechfe.github.io.git')
+     .push('origin', 'master');
 })
 
 
