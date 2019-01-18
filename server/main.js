@@ -55,7 +55,7 @@ const md = new MarkdownIt()
 // console.log(chalk.red('Authentication already exists!'))
 
 // commands.login()
-job()
+// job()
 
 
 // const rootpath = file.getCurrentDirectoryBase()
@@ -71,9 +71,11 @@ job()
 //   status: 'added'
 // }])
 
-setInterval(() => {
-  job()
-}, 60*5)
+// setInterval(() => {
+//   job()
+// }, 60*5)
+
+git.add('./*').commit('Initial Commit')//.addRemote('origin', url).push('origin', 'master')
 
 async function job() {
   const check = await commands.checkbuild()
