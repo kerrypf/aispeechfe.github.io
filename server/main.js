@@ -75,7 +75,7 @@ const md = new MarkdownIt()
 //   job()
 // }, 60*5)
 
-git.add('./*').commit('Initial Commit')//.addRemote('origin', url).push('origin', 'master')
+git.add('./*').commit('Initial Commit').push('origin', 'master')
 
 async function job() {
   const check = await commands.checkbuild()
