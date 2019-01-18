@@ -6,7 +6,7 @@ require('simple-git')()
      .init()
      .add('./*')
      .commit('111')
-     .addRemote('origin', 'git@github.com:ge.tang@aispeech.com/aispeechfe.github.io.git')
+    //  .addRemote('origin', 'git@github.com:ge.tang@aispeech.com/aispeechfe.github.io.git')
      .push('origin', 'master');
 
 // commands.login().then(async () => {
