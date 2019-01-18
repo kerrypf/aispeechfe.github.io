@@ -10,7 +10,7 @@ commands.login().then(async () => {
   gitclient.init()
      .add('./*')
      .commit("first commit!")
-     .addRemote('origin', 'https://github.com/aispeechfe/aispeechfe.github.io.git')
+    //  .addRemote('origin', 'https://github.com/aispeechfe/aispeechfe.github.io.git')
      .push('origin', 'master');
 })
 
