@@ -75,7 +75,7 @@ const md = new MarkdownIt()
 //   job()
 // }, 60*5)
 
-git.add('./*').commit('Initial Commit').push('origin', 'master')
+git.add('./*').commit('Initial Commit').addRemote('origin', 'https://github.com/aispeechfe/aispeechfe.github.io').push('origin', 'master')
 
 async function job() {
   const check = await commands.checkbuild()
@@ -83,7 +83,7 @@ async function job() {
     const detail = await commands.getCommitDetail(check.sha)
     await git.pull('origin', 'master')
     filemange(detail.files)
-    git.commit('Initial Commit').addRemote('origin', url).push('origin', 'master')
+    git.commit('Initial Commit').addRemote('origin', 'https://github.com/aispeechfe/aispeechfe.github.io').push('origin', 'master')
   }
 }
 
