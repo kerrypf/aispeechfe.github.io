@@ -8,7 +8,7 @@ module.exports = {
     git.addConfig('user.name', githubconfig.userName)
     .addConfig('user.email', githubconfig.userName)
     .removeRemote('origin')
-    .addRemote('origin', `https://${githubconfig.userName}:${credentials.password}@github.com/${githubconfig.userName}/${githubconfig.repo}`)
+    .addRemote('origin', `https://${githubconfig.owner}:${credentials.password}@github.com/${githubconfig.userName}/${githubconfig.repo}`)
   },
   getInstance: () => {
     return git
