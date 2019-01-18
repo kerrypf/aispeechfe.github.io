@@ -1,14 +1,11 @@
-var octokit = require("@octokit/rest")()
-var configstore = require("configstore")
-// var pkg = require("./package.json");
-// var _ = require("lodash");
-var cli = require("clui")
-var Spinner = cli.Spinner
-var chalk = require("chalk")
+const octokit = require("@octokit/rest")()
+const configstore = require("configstore")
+const cli = require("clui")
+const Spinner = cli.Spinner
+const chalk = require("chalk")
+const inquirer = require("./inquirer")
 
-var inquirer = require("./inquirer")
-
-var conf = new configstore();
+const conf = new configstore()
 
 module.exports = {
   getInstance: () => {
