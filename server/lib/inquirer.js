@@ -27,5 +27,21 @@ module.exports = {
     }]
 
     return inquirer.prompt(questions)
+  },
+  askGitPwd: () => {
+    const questions = [{
+      name: 'password',
+      type: 'password',
+      message: 'Enter your password:',
+      validate: value => {
+        if (value.length) {
+          return true;
+        } else {
+          return 'Please enter your password'
+        }
+      }
+    }]
+
+    return inquirer.prompt(questions)
   }
 }

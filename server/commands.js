@@ -28,7 +28,7 @@ module.exports = {
     
     const listdocsha = listdocs.map(m => m.sha)
     const listfilessha = listfiles.map(m => m.sha)
-
+    console.log(listdocsha, listfilessha)
     if (listdocsha.length > 0) {
       const sha = listdocsha[0]
       const hasbuild = listfilessha.find(m => m == sha) 
