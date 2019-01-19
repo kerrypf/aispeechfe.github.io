@@ -17,7 +17,7 @@ async function job() {
   if (check.build) {
     const detail = await commands.getCommitDetail(check.sha)
     // console.log(detail)
-    await gitclient.pull('origin', 'master')
+    await git.pull('origin', 'master')
     commands.filebuild(detail.files)
     git.add('./*').commit('Initial Commit').push('origin', 'master')
   }

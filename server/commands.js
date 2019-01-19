@@ -2,7 +2,9 @@ const chalk = require("chalk")
 const moment = require("moment")
 const MarkdownIt = require('markdown-it')
 const github = require("./lib/github")
+const file = require("./lib/files")
 const repo = require("./lib/repo")
+const template = require("./lib/template")
 const { githubconfig } = require('./config/account')
 
 const md = new MarkdownIt()
@@ -61,7 +63,7 @@ module.exports = {
         file.removefile(m.htmlfilename)
         let data = file.readFileSync(m.filename.replace('docs', './docs'))
         let content = md.render(data.toString())
-        let html = layoutDetail(content, addrs)
+        let html = template.layoutDetail(content, addrs)
         file.writeFileSync(m.htmlfilename, html)
       }
     })
@@ -70,7 +72,7 @@ module.exports = {
     const subjects =  file.readdirSync('./files')
     subjects.map(m => {
       let list = file.readdirSync(`./files/${m}`)
-      let html = layoutSubject(list, addrs)
+      let html = template.layoutSubject(list, addrs)
       file.writeFileSync(`./subject/${m}.html`, html)
     })
   }
