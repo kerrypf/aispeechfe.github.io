@@ -1,13 +1,18 @@
 const commands = require("./commands")
 const git = require("simple-git")()
 
-commands.login().then(async () => {
-  await git.pull('origin', 'master')
-  job()
-  setInterval(() => {
-    job()
-  }, 300*1000);
-})
+
+commands.filebuild([{
+  filename: 'docs/前端/一个简易的github博客.md'
+}])
+
+// commands.login().then(async () => {
+//   await git.pull('origin', 'master')
+//   job()
+//   setInterval(() => {
+//     job()
+//   }, 300*1000);
+// })
 
 
 

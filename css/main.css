@@ -46,6 +46,9 @@ p {
 }
 .head .nav a {
   margin: 0 5px;
+  height: 60px;
+  line-height: 60px;
+  display: inline-block;
 }
 
 .banner {
@@ -84,5 +87,8 @@ p {
 }
 
 .detail {
-  padding-top: 60px;
+  padding-top: 80px;
+  max-width: 768px;
+  margin: 0 auto;
+  word-break: break-all;
 }

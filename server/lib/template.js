@@ -11,11 +11,11 @@ module.exports = {
       addrs: addrs
     })
   },
-  layoutDetail: (content, addrs) => {
+  layoutDetail: (content, addrs, title) => {
     let template = file.readFileSync('./layout/detail.html')
     return TemplateEngine(template.toString(), {
       content: content,
-      title: '111',
+      title: title,
       addrs: addrs
     })
   }

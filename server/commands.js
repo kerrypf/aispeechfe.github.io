@@ -56,14 +56,18 @@ module.exports = {
 
     // 2. 生成详情页静态文件
     files.map(m => {
-      m.htmlfilename = m.filename.replace('docs', './files').replace('.md', '.html')
+      const info = m.filename.split('/')
+      const column = info[1]
+      const title = info[2].replace('.md', '')
+
+      m.htmlfilename = `./files/${column}/${title}.html`
       if (m.status == 'removed') {
         file.removefile(m.htmlfilename)
       } else {
         file.removefile(m.htmlfilename)
-        let data = file.readFileSync(m.filename.replace('docs', './docs'))
+        let data = file.readFileSync(`./${m.filename}`)
         let content = md.render(data.toString())
-        let html = template.layoutDetail(content, addrs)
+        let html = template.layoutDetail(content, addrs, title)
         file.writeFileSync(m.htmlfilename, html)
       }
     })
@@ -75,8 +79,9 @@ module.exports = {
       let html = template.layoutSubject(list, addrs)
       file.writeFileSync(`./subject/${m}.html`, html)
     })
-
+    
     // 4.生成首页静态文件
-
+    let html = template.layoutSubject([], addrs)
+    file.writeFileSync(`./index.html`, html)
   }
 }

@@ -12,7 +12,9 @@
     <div class="head">
       <div class="nav">
         <% for(var i = 0; i < this.addrs.length; i++) { %>
-          <a href="/subject/<% this.addrs[i] %>"><% this.addrs[i] %></a>
+          <a href="/subject/<% this.addrs[i] %>">
+            <% this.addrs[i] %>
+          </a>
         <% } %>
       </div>
     </div>
