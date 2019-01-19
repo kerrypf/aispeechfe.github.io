@@ -73,7 +73,7 @@ module.exports = {
     subjects.map(m => {
       let list = file.readdirSync(`./files/${m}`)
       let html = template.layoutSubject(list, addrs)
-      let path = `${m == 'index' ? './':'./subject/'}${m}.html`
+      let path = (m == 'index' ? './':'./subject/')+`${m}.html`
       console.log(path)
       file.writeFileSync(path, html)
       console.log(1)
