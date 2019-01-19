@@ -76,6 +76,7 @@ module.exports = {
       let path = `${m == 'index' ? './':'./subject/'}${m}.html`
       console.log(path)
       file.writeFileSync(path, html)
+      console.log(1)
     })
   }
 }
