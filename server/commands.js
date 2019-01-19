@@ -52,7 +52,7 @@ module.exports = {
   filebuild: (files) => {
     // 1. 读取目录
     const addrs =  file.readdirSync('./docs')
-    addrs.unshift('HOME')
+    addrs.unshift('index')
 
     // 2. 生成详情页静态文件
     files.map(m => {
@@ -73,7 +73,8 @@ module.exports = {
     subjects.map(m => {
       let list = file.readdirSync(`./files/${m}`)
       let html = template.layoutSubject(list, addrs)
-      file.writeFileSync(`./subject/${m}.html`, html)
+      let path = `${m == 'index' ? './':'./subject/'}${m}.html`
+      file.writeFileSync(path, html)
     })
   }
 }
