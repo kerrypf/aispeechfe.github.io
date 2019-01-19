@@ -75,7 +75,7 @@ module.exports = {
       let html = template.layoutSubject(list, addrs)
       let path = `${m == 'index' ? './':'./subject/'}${m}.html`
       console.log(path)
-      file.writeFileSync(path, html)
+      // file.writeFileSync(path, html)
     })
   }
 }
