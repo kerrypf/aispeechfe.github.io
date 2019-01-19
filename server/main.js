@@ -4,7 +4,9 @@ const git = require("simple-git")()
 commands.login().then(async () => {
   await git.pull('origin', 'master')
   job()
-  git.add('./*').commit('Initial Commit').push('origin', 'master')
+  setInterval(() => {
+    job()
+  }, 300*1000);
 })
 
 
