@@ -53,13 +53,13 @@ module.exports = {
     // 1. 读取目录
     const addrs =  file.readdirSync('./docs')
     addrs.unshift('index')
-
+    console.log(1)
     // 2. 生成详情页静态文件
     files.map(m => {
       const info = m.filename.split('/')
       const column = info[1]
       const title = info[2].replace('.md', '')
-
+      
       m.htmlfilename = `./files/${column}/${title}.html`
       if (m.status == 'removed') {
         file.removefile(m.htmlfilename)
@@ -71,15 +71,20 @@ module.exports = {
         file.writeFileSync(m.htmlfilename, html)
       }
     })
-
+    
+    console.log(2)
     // 3.生成主题页静态文件
     const subjects =  file.readdirSync('./files')
+    console.log(subjects)
     subjects.map(m => {
+      if (m == '.DS_Store') { return }
+      console.log(2, m)
       let list = file.readdirSync(`./files/${m}`)
       let html = template.layoutSubject(list, addrs)
       file.writeFileSync(`./subject/${m}.html`, html)
     })
     
+    console.log(3)
     // 4.生成首页静态文件
     let html = template.layoutSubject([], addrs)
     file.writeFileSync(`./index.html`, html)
