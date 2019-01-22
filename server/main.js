@@ -13,7 +13,7 @@ const template = require("./lib/template")
 // datastore.check({status: 'added'}, '前端', '112255')
 
 // let html = template.layoutSubject('前端', [ { name: '的等我.md', content: '21313', createtime: 1548083424576 },{ name: '的等我.md', createtime: 1548083424576 },{ name: '的等我.md', createtime: 1548083424576 } ], [])
-// file.writeFileSync(`./subject/${'前端'}.html`, html)11
+// file.writeFileSync(`./subject/${'前端'}.html`, html)111
 commands.login().then(async () => {
   await git.pull('origin', 'master')
   job()
