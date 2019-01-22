@@ -7,6 +7,7 @@ const { githubconfig } = require('./config/account')
 const moment = require("moment")
 const repo = require("./lib/repo")
 const temp = require("./config/temp.json")
+const { sortByTime } = require("./util/lang")
 const MarkdownIt = require('markdown-it')
 
 const md = new MarkdownIt()
@@ -139,6 +140,13 @@ async function job() {
     file.writeFileSync(`./subject/${m}.html`, html)
   })
   // 8.渲染首页
+  const listall = []
+  docsjson.map(m => {
+    listall.concat(m.mds)
+  })
+  sortByTime(listall)
+  let html = template.layoutIndex(listall, ['HOME'].concat(columns), 'HOME')
+  file.writeFileSync(`./index.html`, html)
 }
 
 

@@ -1,4 +1,4 @@
-const file = require("./files")
+const file = require("../server/lib/files")
 
 module.exports = {
   check: (data, column, name, content) => {
