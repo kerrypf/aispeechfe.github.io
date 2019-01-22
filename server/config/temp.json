@@ -1,0 +1,345 @@
+[
+  {
+    "sha": "f87074a3f037b1cd17e63f272ee54431f35aa291",
+    "files": [
+      {
+        "sha": "b0311940dec17d5ee36fa057401da16ff0ce57d3",
+        "filename": "css/main.css",
+        "status": "modified",
+        "additions": 35,
+        "deletions": 0,
+        "changes": 35,
+        "blob_url": "https://github.com/aispeechfe/aispeechfe.github.io/blob/f87074a3f037b1cd17e63f272ee54431f35aa291/css/main.css",
+        "raw_url": "https://github.com/aispeechfe/aispeechfe.github.io/raw/f87074a3f037b1cd17e63f272ee54431f35aa291/css/main.css",
+        "contents_url": "https://api.github.com/repos/aispeechfe/aispeechfe.github.io/contents/css/main.css?ref=f87074a3f037b1cd17e63f272ee54431f35aa291",
+        "patch": "@@ -50,6 +50,9 @@ p {\n   line-height: 60px;\n   display: inline-block;\n }\n+.head .nav .active {\n+  border-bottom: 1px solid red;\n+}\n \n .banner {\n   height: 150px;\n@@ -91,4 +94,36 @@ p {\n   max-width: 768px;\n   margin: 0 auto;\n   word-break: break-all;\n+}\n+\n+.list .item {\n+  max-width: 768px;\n+  margin: 0 auto;\n+  display: block;\n+  padding: 30px 0;\n+}\n+\n+.list .item .post-title {\n+  color: #000;\n+  font-size: 32px;\n+  font-weight: 700;\n+  text-indent: -1px;\n+}\n+\n+.list .post-meta {\n+  display: block;\n+  font-size: 14px;\n+  font-weight: 600;\n+  color: #E63917;\n+}\n+\n+.list .item .post-more a {\n+  display: inline-block;\n+  font-size: 14px;\n+  font-weight: 600;\n+  color: #363740;\n+}\n+\n+.list .item .post-excerpt {\n+\n }\n\\ No newline at end of file"
+      },
+      {
+        "sha": "8ba30a3e306452e9cf4b969f6ded654a716c2f1f",
+        "filename": "data/docs.json",
+        "status": "modified",
+        "additions": 1,
+        "deletions": 0,
+        "changes": 1,
+        "blob_url": "https://github.com/aispeechfe/aispeechfe.github.io/blob/f87074a3f037b1cd17e63f272ee54431f35aa291/data/docs.json",
+        "raw_url": "https://github.com/aispeechfe/aispeechfe.github.io/raw/f87074a3f037b1cd17e63f272ee54431f35aa291/data/docs.json",
+        "contents_url": "https://api.github.com/repos/aispeechfe/aispeechfe.github.io/contents/data/docs.json?ref=f87074a3f037b1cd17e63f272ee54431f35aa291",
+        "patch": "@@ -0,0 +1 @@\n+{\"前端\":[{\"name\":\"mmmd11.md\",\"createtime\":1548085690922,\"content\":\"<p>1111\\n123\\n1311\\n3\\n1\\n31\\n122121</p>\\n\"}]}\n\\ No newline at end of file"
+      },
+      {
+        "sha": "9e26dfeeb6e641a33dae4961196235bdb965b21b",
+        "filename": "docs/前端/1122",
+        "status": "modified",
+        "additions": 1,
+        "deletions": 1,
+        "changes": 2,
+        "blob_url": "https://github.com/aispeechfe/aispeechfe.github.io/blob/f87074a3f037b1cd17e63f272ee54431f35aa291/docs/%E5%89%8D%E7%AB%AF/1122",
+        "raw_url": "https://github.com/aispeechfe/aispeechfe.github.io/raw/f87074a3f037b1cd17e63f272ee54431f35aa291/docs/%E5%89%8D%E7%AB%AF/1122",
+        "contents_url": "https://api.github.com/repos/aispeechfe/aispeechfe.github.io/contents/docs/%E5%89%8D%E7%AB%AF/1122?ref=f87074a3f037b1cd17e63f272ee54431f35aa291",
+        "patch": "@@ -1 +1 @@\n-1\n+{}\n\\ No newline at end of file"
+      },
+      {
+        "sha": "634bc155352e4ef12dba3220b512e61ce4a11d10",
+        "filename": "files/前端/1122.html",
+        "status": "modified",
+        "additions": 1,
+        "deletions": 1,
+        "changes": 2,
+        "blob_url": "https://github.com/aispeechfe/aispeechfe.github.io/blob/f87074a3f037b1cd17e63f272ee54431f35aa291/files/%E5%89%8D%E7%AB%AF/1122.html",
+        "raw_url": "https://github.com/aispeechfe/aispeechfe.github.io/raw/f87074a3f037b1cd17e63f272ee54431f35aa291/files/%E5%89%8D%E7%AB%AF/1122.html",
+        "contents_url": "https://api.github.com/repos/aispeechfe/aispeechfe.github.io/contents/files/%E5%89%8D%E7%AB%AF/1122.html?ref=f87074a3f037b1cd17e63f272ee54431f35aa291",
+        "patch": "@@ -1,2 +1,2 @@\n-<!DOCTYPE html><html lang=\"en\"><head>  <meta charset=\"UTF-8\">  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">  <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">  <title>1122</title>  <link rel=\"stylesheet\" type=\"text/css\" href=\"../../css/main.css\"></head><body>  <section>     <div class=\"head\">      <div class=\"nav\">                  <a href=\"/subject/index\">            index          </a>                  <a href=\"/subject/前端\">            前端          </a>              </div>    </div>    <div class=\"detail\">      <p>1</p>\n+<!DOCTYPE html><html lang=\"en\"><head>  <meta charset=\"UTF-8\">  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">  <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">  <title>1122</title>  <link rel=\"stylesheet\" type=\"text/css\" href=\"../../css/main.css\"></head><body>  <section>     <div class=\"head\">      <div class=\"nav\">                  <a href=\"/subject/index\">            index          </a>                  <a href=\"/subject/前端\">            前端          </a>              </div>    </div>    <div class=\"detail\">      <p>{}</p>\n     </div>    <div class=\"bottom\">      参考有赞网站 <a href=\"https://tech.youzan.com/\" target=\"_blank\">有赞</a>    </div>  </section></body></html>\n\\ No newline at end of file"
+      },
+      {
+        "sha": "1368decb3f1cb0225cbfe1cf34d806eb605798cb",
+        "filename": "files/前端/mmm.html",
+        "status": "added",
+        "additions": 7,
+        "deletions": 0,
+        "changes": 7,
+        "blob_url": "https://github.com/aispeechfe/aispeechfe.github.io/blob/f87074a3f037b1cd17e63f272ee54431f35aa291/files/%E5%89%8D%E7%AB%AF/mmm.html",
+        "raw_url": "https://github.com/aispeechfe/aispeechfe.github.io/raw/f87074a3f037b1cd17e63f272ee54431f35aa291/files/%E5%89%8D%E7%AB%AF/mmm.html",
+        "contents_url": "https://api.github.com/repos/aispeechfe/aispeechfe.github.io/contents/files/%E5%89%8D%E7%AB%AF/mmm.html?ref=f87074a3f037b1cd17e63f272ee54431f35aa291",
+        "patch": "@@ -0,0 +1,7 @@\n+<!DOCTYPE html><html lang=\"en\"><head>  <meta charset=\"UTF-8\">  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">  <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">  <title>mmm</title>  <link rel=\"stylesheet\" type=\"text/css\" href=\"../../css/main.css\"></head><body>  <section>     <div class=\"head\">      <div class=\"nav\">                  <a href=\"/subject/index\">            index          </a>                  <a href=\"/subject/前端\">            前端          </a>              </div>    </div>    <div class=\"detail\">      <p>1111\n+123\n+13\n+3\n+1\n+31</p>\n+    </div>    <div class=\"bottom\">      参考有赞网站 <a href=\"https://tech.youzan.com/\" target=\"_blank\">有赞</a>    </div>  </section></body></html>\n\\ No newline at end of file"
+      },
+      {
+        "sha": "92e64233afb56d0b5ebae23ecbbbfcd9b02b3d1a",
+        "filename": "files/前端/mmmd.html",
+        "status": "added",
+        "additions": 7,
+        "deletions": 0,
+        "changes": 7,
+        "blob_url": "https://github.com/aispeechfe/aispeechfe.github.io/blob/f87074a3f037b1cd17e63f272ee54431f35aa291/files/%E5%89%8D%E7%AB%AF/mmmd.html",
+        "raw_url": "https://github.com/aispeechfe/aispeechfe.github.io/raw/f87074a3f037b1cd17e63f272ee54431f35aa291/files/%E5%89%8D%E7%AB%AF/mmmd.html",
+        "contents_url": "https://api.github.com/repos/aispeechfe/aispeechfe.github.io/contents/files/%E5%89%8D%E7%AB%AF/mmmd.html?ref=f87074a3f037b1cd17e63f272ee54431f35aa291",
+        "patch": "@@ -0,0 +1,7 @@\n+<!DOCTYPE html><html lang=\"en\"><head>  <meta charset=\"UTF-8\">  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">  <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">  <title>mmmd</title>  <link rel=\"stylesheet\" type=\"text/css\" href=\"../../css/main.css\"></head><body>  <section>     <div class=\"head\">      <div class=\"nav\">                  <a href=\"/subject/index\">            index          </a>                  <a href=\"/subject/前端\">            前端          </a>              </div>    </div>    <div class=\"detail\">      <p>1111\n+123\n+13\n+3\n+1\n+31</p>\n+    </div>    <div class=\"bottom\">      参考有赞网站 <a href=\"https://tech.youzan.com/\" target=\"_blank\">有赞</a>    </div>  </section></body></html>\n\\ No newline at end of file"
+      },
+      {
+        "sha": "3b96d4c87ede150e84498a4134e78a4d493c4a87",
+        "filename": "files/前端/mmmd11.html",
+        "status": "added",
+        "additions": 8,
+        "deletions": 0,
+        "changes": 8,
+        "blob_url": "https://github.com/aispeechfe/aispeechfe.github.io/blob/f87074a3f037b1cd17e63f272ee54431f35aa291/files/%E5%89%8D%E7%AB%AF/mmmd11.html",
+        "raw_url": "https://github.com/aispeechfe/aispeechfe.github.io/raw/f87074a3f037b1cd17e63f272ee54431f35aa291/files/%E5%89%8D%E7%AB%AF/mmmd11.html",
+        "contents_url": "https://api.github.com/repos/aispeechfe/aispeechfe.github.io/contents/files/%E5%89%8D%E7%AB%AF/mmmd11.html?ref=f87074a3f037b1cd17e63f272ee54431f35aa291",
+        "patch": "@@ -0,0 +1,8 @@\n+<!DOCTYPE html><html lang=\"en\"><head>  <meta charset=\"UTF-8\">  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">  <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">  <title>mmmd11</title>  <link rel=\"stylesheet\" type=\"text/css\" href=\"../../css/main.css\"></head><body>  <section>     <div class=\"head\">      <div class=\"nav\">                  <a href=\"/subject/index\">            index          </a>                  <a href=\"/subject/前端\">            前端          </a>              </div>    </div>    <div class=\"detail\">      <p>1111\n+123\n+1311\n+3\n+1\n+31\n+122121</p>\n+    </div>    <div class=\"bottom\">      参考有赞网站 <a href=\"https://tech.youzan.com/\" target=\"_blank\">有赞</a>    </div>  </section></body></html>\n\\ No newline at end of file"
+      },
+      {
+        "sha": "63b4ce1bfb8fee73793fc68f71a67d9e191dce75",
+        "filename": "layout/index.html",
+        "status": "modified",
+        "additions": 20,
+        "deletions": 5,
+        "changes": 25,
+        "blob_url": "https://github.com/aispeechfe/aispeechfe.github.io/blob/f87074a3f037b1cd17e63f272ee54431f35aa291/layout/index.html",
+        "raw_url": "https://github.com/aispeechfe/aispeechfe.github.io/raw/f87074a3f037b1cd17e63f272ee54431f35aa291/layout/index.html",
+        "contents_url": "https://api.github.com/repos/aispeechfe/aispeechfe.github.io/contents/layout/index.html?ref=f87074a3f037b1cd17e63f272ee54431f35aa291",
+        "patch": "@@ -12,21 +12,36 @@\n     <div class=\"head\">\n       <div class=\"nav\">\n           <% for(var i = 0; i < this.addrs.length; i++) { %>\n-            <a href=\"/subject/<% this.addrs[i] %>\"><% this.addrs[i] %></a>\n+            <a href=\"/subject/<% this.addrs[i] %>\" class=\"<% this.title == this.addrs[i] ? 'active' : '' %>\"><% this.addrs[i] %></a>\n           <% } %>\n       </div>\n     </div>\n     <div class=\"banner\">\n       <div class=\"banner-text\">\n         <!-- 思必驰技术团队 -->\n-        12345\n+        123451\n       </div>\n     </div>\n     <div class=\"list\">\n       <% for(var i = 0; i < this.list.length; i++) { %>\n-        <div class=\"item\">\n-          <% this.list[i] %>\n-        </div>\n+        <artilce class=\"item\">\n+          <span class=\"post-meta\">\n+            <span class=\"post-date\"><% this.list[i].createtime %></span>\n+          </span>\n+          <h2 class=\"post-title\">\n+            <a href=\"/files/<% this.title %>/<% this.list[i].name.replace('.md', '.html') %>\" class=\"js-ajax-link\">\n+              <% this.list[i].name %>\n+            </a>\n+          </h2>\n+          <p class=\"post-excerpt\">\n+            <% this.list[i].content %>\n+          </p>\n+          <span class=\"post-more\">\n+            <a href=\"/files/<% this.title %>/<% this.list[i].name.replace('.md', '.html') %>\" class=\"js-ajax-link\">\n+              Read More <i class=\"icon-arrow-right\"></i>\n+            </a>\n+          </span>\n+        </artilce>\n       <% } %>\n     </div>\n     <div class=\"bottom\">"
+      },
+      {
+        "sha": "6918bdbfe1eed2b6fd948301d3e944f4b70707c4",
+        "filename": "server/commands.js",
+        "status": "modified",
+        "additions": 16,
+        "deletions": 8,
+        "changes": 24,
+        "blob_url": "https://github.com/aispeechfe/aispeechfe.github.io/blob/f87074a3f037b1cd17e63f272ee54431f35aa291/server/commands.js",
+        "raw_url": "https://github.com/aispeechfe/aispeechfe.github.io/raw/f87074a3f037b1cd17e63f272ee54431f35aa291/server/commands.js",
+        "contents_url": "https://api.github.com/repos/aispeechfe/aispeechfe.github.io/contents/server/commands.js?ref=f87074a3f037b1cd17e63f272ee54431f35aa291",
+        "patch": "@@ -4,6 +4,7 @@ const MarkdownIt = require('markdown-it')\n const github = require(\"./lib/github\")\n const file = require(\"./lib/files\")\n const repo = require(\"./lib/repo\")\n+const datastore = require(\"./lib/datastore\")\n const template = require(\"./lib/template\")\n const { githubconfig } = require('./config/account')\n \n@@ -30,7 +31,7 @@ module.exports = {\n     \n     const listdocsha = listdocs.map(m => m.sha)\n     const listfilessha = listfiles.map(m => m.sha)\n-    console.log(listdocsha, listfilessha)\n+    // console.log(listdocsha, listfilessha)\n     if (listdocsha.length > 0) {\n       const sha = listdocsha[0]\n       const hasbuild = listfilessha.find(m => m == sha) \n@@ -61,12 +62,18 @@ module.exports = {\n       const title = info[2].replace('.md', '')\n       \n       m.htmlfilename = `./files/${column}/${title}.html`\n+      \n+      file.removefile(m.htmlfilename)\n       if (m.status == 'removed') {\n-        file.removefile(m.htmlfilename)\n+        datastore.check(m, column)\n+      } else if (m.status == 'renamed') {\n+        let data = file.readFileSync(`./${m.filename}`)\n+        let content = md.render(data.toString())\n+        datastore.check(m, column, info[2], content.substring(0, 100))\n       } else {\n-        file.removefile(m.htmlfilename)\n         let data = file.readFileSync(`./${m.filename}`)\n         let content = md.render(data.toString())\n+        datastore.check(m, column, info[2], content.substring(0, 100))\n         let html = template.layoutDetail(content, addrs, title)\n         file.writeFileSync(m.htmlfilename, html)\n       }\n@@ -75,18 +82,19 @@ module.exports = {\n     console.log(2)\n     // 3.生成主题页静态文件\n     const subjects =  file.readdirSync('./files')\n-    console.log(subjects)\n+    // console.log(subjects)\n+    const docsdata = JSON.parse(file.readFileSync(`./data/docs.json`).toString()) \n     subjects.map(m => {\n       if (m == '.DS_Store') { return }\n       console.log(2, m)\n-      let list = file.readdirSync(`./files/${m}`)\n-      let html = template.layoutSubject(list, addrs)\n+      // let list = file.readdirSync(`./files/${m}`)\n+      let html = template.layoutSubject(m, docsdata[m], addrs)\n       file.writeFileSync(`./subject/${m}.html`, html)\n     })\n     \n     console.log(3)\n     // 4.生成首页静态文件\n-    let html = template.layoutSubject([], addrs)\n-    file.writeFileSync(`./index.html`, html)\n+    // let html = template.layoutSubject([], addrs)\n+    // file.writeFileSync(`./index.html`, html)\n   }\n }\n\\ No newline at end of file"
+      },
+      {
+        "sha": "45d15978d6c180eef988a987ee68be8d2c71b411",
+        "filename": "server/lib/datastore.js",
+        "status": "added",
+        "additions": 31,
+        "deletions": 0,
+        "changes": 31,
+        "blob_url": "https://github.com/aispeechfe/aispeechfe.github.io/blob/f87074a3f037b1cd17e63f272ee54431f35aa291/server/lib/datastore.js",
+        "raw_url": "https://github.com/aispeechfe/aispeechfe.github.io/raw/f87074a3f037b1cd17e63f272ee54431f35aa291/server/lib/datastore.js",
+        "contents_url": "https://api.github.com/repos/aispeechfe/aispeechfe.github.io/contents/server/lib/datastore.js?ref=f87074a3f037b1cd17e63f272ee54431f35aa291",
+        "patch": "@@ -0,0 +1,31 @@\n+const file = require(\"./files\")\n+\n+module.exports = {\n+  check: (data, column, name, content) => {\n+    let info = JSON.parse(file.readFileSync(`./data/docs.json`).toString()) \n+    if (data.status == 'removed') {\n+      const idx = info[column].findIndex(m => m.name == name)\n+      info[column].splice(idx, 1)\n+    } else if (data.status == 'added') {\n+      if (!info[column]) { info[column] = [] }\n+      console.log(name, column)\n+      info[column].push({\n+        name: name,\n+        createtime: (+new Date()),\n+        content: content\n+      })\n+    } else if (data.status == 'modified') {\n+      const idx = info[column].findIndex(m => m.name == name)\n+      info[column][idx].content = content\n+    } else if (data.status == 'renamed') {\n+      const prev_name = data.previous_filename.split('/')[2]\n+      const idx = info[column].findIndex(m => m.name == prev_name)\n+      console.log(info[column], idx, prev_name)\n+      info[column][idx].name = name\n+      info[column][idx].content = content\n+    }\n+    console.log(data.filename, info)\n+    file.writeFileSync(`./data/docs.json`, JSON.stringify(info))\n+    return info\n+  }\n+}\n\\ No newline at end of file"
+      },
+      {
+        "sha": "3ae18de5e2c910e835f1cb6090783f541d2350cb",
+        "filename": "server/lib/template.js",
+        "status": "modified",
+        "additions": 3,
+        "deletions": 2,
+        "changes": 5,
+        "blob_url": "https://github.com/aispeechfe/aispeechfe.github.io/blob/f87074a3f037b1cd17e63f272ee54431f35aa291/server/lib/template.js",
+        "raw_url": "https://github.com/aispeechfe/aispeechfe.github.io/raw/f87074a3f037b1cd17e63f272ee54431f35aa291/server/lib/template.js",
+        "contents_url": "https://api.github.com/repos/aispeechfe/aispeechfe.github.io/contents/server/lib/template.js?ref=f87074a3f037b1cd17e63f272ee54431f35aa291",
+        "patch": "@@ -3,11 +3,12 @@ const file = require(\"./files\")\n \n \n module.exports = {\n-  layoutSubject: (list, addrs) => {\n+  layoutSubject: (column, list, addrs) => {\n+    console.log(\"layoutSubject\", column, list, addrs)\n     let template = file.readFileSync('./layout/index.html')\n     return TemplateEngine(template.toString(), {\n       list: list,\n-      title: '111',\n+      title: column,\n       addrs: addrs\n     })\n   },"
+      },
+      {
+        "sha": "4e16ddb9a3986003338cfc9111d1c1e07ce957d8",
+        "filename": "server/main.js",
+        "status": "modified",
+        "additions": 12,
+        "deletions": 4,
+        "changes": 16,
+        "blob_url": "https://github.com/aispeechfe/aispeechfe.github.io/blob/f87074a3f037b1cd17e63f272ee54431f35aa291/server/main.js",
+        "raw_url": "https://github.com/aispeechfe/aispeechfe.github.io/raw/f87074a3f037b1cd17e63f272ee54431f35aa291/server/main.js",
+        "contents_url": "https://api.github.com/repos/aispeechfe/aispeechfe.github.io/contents/server/main.js?ref=f87074a3f037b1cd17e63f272ee54431f35aa291",
+        "patch": "@@ -1,11 +1,19 @@\n const commands = require(\"./commands\")\n const git = require(\"simple-git\")()\n-\n-\n+const datastore = require(\"./lib/datastore\")\n+const file = require(\"./lib/files\")\n+const template = require(\"./lib/template\")\n // commands.filebuild([{\n //   filename: 'docs/前端/一个简易的github博客.md'\n // }])\n \n+// let info = file.readFileSync(`./data/docs.json`)\n+// console.log(info.toString())\n+\n+// datastore.check({status: 'added'}, '前端', '112255')\n+\n+// let html = template.layoutSubject('前端', [ { name: '的等我.md', content: '21313', createtime: 1548083424576 },{ name: '的等我.md', createtime: 1548083424576 },{ name: '的等我.md', createtime: 1548083424576 } ], [])\n+// file.writeFileSync(`./subject/${'前端'}.html`, html)\n commands.login().then(async () => {\n   await git.pull('origin', 'master')\n   job()\n@@ -21,9 +29,9 @@ async function job() {\n   console.log(check)\n   if (check.build) {\n     const detail = await commands.getCommitDetail(check.sha)\n-    // console.log(detail)\n+    console.log(detail)\n     await git.pull('origin', 'master')\n     commands.filebuild(detail.files)\n-    git.add('./*').commit('Initial Commit').push('origin', 'master')\n+    // git.add('./*').commit('Initial Commit').push('origin', 'master')\n   }\n }"
+      },
+      {
+        "sha": "88a36a25673c76427ebe4bae626da1c779854fb0",
+        "filename": "subject/前端.html",
+        "status": "modified",
+        "additions": 8,
+        "deletions": 1,
+        "changes": 9,
+        "blob_url": "https://github.com/aispeechfe/aispeechfe.github.io/blob/f87074a3f037b1cd17e63f272ee54431f35aa291/subject/%E5%89%8D%E7%AB%AF.html",
+        "raw_url": "https://github.com/aispeechfe/aispeechfe.github.io/raw/f87074a3f037b1cd17e63f272ee54431f35aa291/subject/%E5%89%8D%E7%AB%AF.html",
+        "contents_url": "https://api.github.com/repos/aispeechfe/aispeechfe.github.io/contents/subject/%E5%89%8D%E7%AB%AF.html?ref=f87074a3f037b1cd17e63f272ee54431f35aa291",
+        "patch": "@@ -1 +1,8 @@\n-<!DOCTYPE html><html lang=\"en\"><head>  <meta charset=\"UTF-8\">  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">  <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">  <title>111</title>  <link rel=\"stylesheet\" type=\"text/css\" href=\"../css/main.css\"></head><body>  <section>     <div class=\"head\">      <div class=\"nav\">                      <a href=\"/subject/index\">index</a>                      <a href=\"/subject/前端\">前端</a>                </div>    </div>    <div class=\"banner\">      <div class=\"banner-text\">        <!-- 思必驰技术团队 -->        12345      </div>    </div>    <div class=\"list\">              <div class=\"item\">          1122.html        </div>              <div class=\"item\">          一个简易的github博客.html        </div>          </div>    <div class=\"bottom\">      参考有赞网站 <a href=\"https://tech.youzan.com/\" target=\"_blank\">有赞</a>    </div>  </section></body></html>\n\\ No newline at end of file\n+<!DOCTYPE html><html lang=\"en\"><head>  <meta charset=\"UTF-8\">  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">  <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">  <title>前端</title>  <link rel=\"stylesheet\" type=\"text/css\" href=\"../css/main.css\"></head><body>  <section>     <div class=\"head\">      <div class=\"nav\">                      <a href=\"/subject/index\" class=\"\">index</a>                      <a href=\"/subject/前端\" class=\"active\">前端</a>                </div>    </div>    <div class=\"banner\">      <div class=\"banner-text\">        <!-- 思必驰技术团队 -->        123451      </div>    </div>    <div class=\"list\">              <artilce class=\"item\">          <span class=\"post-meta\">            <span class=\"post-date\">1548085690922</span>          </span>          <h2 class=\"post-title\">            <a href=\"/files/前端/mmmd11.html\" class=\"js-ajax-link\">              mmmd11.md            </a>          </h2>          <p class=\"post-excerpt\">            <p>1111\n+123\n+1311\n+3\n+1\n+31\n+122121</p>\n+          </p>          <span class=\"post-more\">            <a href=\"/files/前端/mmmd11.html\" class=\"js-ajax-link\">              Read More <i class=\"icon-arrow-right\"></i>            </a>          </span>        </artilce>          </div>    <div class=\"bottom\">      参考有赞网站 <a href=\"https://tech.youzan.com/\" target=\"_blank\">有赞</a>    </div>  </section></body></html>\n\\ No newline at end of file"
+      }
+    ],
+    "commit": {
+      "name": "Your Name",
+      "email": "you@example.com",
+      "date": "2019-01-22T00:26:00Z"
+    }
+  },
+  {
+    "sha": "73acfd39979f182deb61fea742efb22abd21d86f",
+    "files": [
+      {
+        "sha": "0ff66beae55c41a90167c3fe8b2aab49c610b445",
+        "filename": "docs/前端/mmmd11.md",
+        "status": "modified",
+        "additions": 1,
+        "deletions": 0,
+        "changes": 1,
+        "blob_url": "https://github.com/aispeechfe/aispeechfe.github.io/blob/73acfd39979f182deb61fea742efb22abd21d86f/docs/%E5%89%8D%E7%AB%AF/mmmd11.md",
+        "raw_url": "https://github.com/aispeechfe/aispeechfe.github.io/raw/73acfd39979f182deb61fea742efb22abd21d86f/docs/%E5%89%8D%E7%AB%AF/mmmd11.md",
+        "contents_url": "https://api.github.com/repos/aispeechfe/aispeechfe.github.io/contents/docs/%E5%89%8D%E7%AB%AF/mmmd11.md?ref=73acfd39979f182deb61fea742efb22abd21d86f",
+        "patch": "@@ -4,3 +4,4 @@\n 3\n 1\n 31\n+122121"
+      }
+    ],
+    "commit": {
+      "name": "aispeechfe",
+      "email": "46743804+aispeechfe@users.noreply.github.com",
+      "date": "2019-01-21T16:07:16Z"
+    }
+  },
+  {
+    "sha": "9d373ff27274d42953b1bfed894ed22da41e59dc",
+    "files": [
+      {
+        "sha": "b4c9d90c32aaef3da6873e51fdcfb07af6f25905",
+        "filename": "docs/前端/mmmd11.md",
+        "status": "renamed",
+        "additions": 1,
+        "deletions": 1,
+        "changes": 2,
+        "blob_url": "https://github.com/aispeechfe/aispeechfe.github.io/blob/9d373ff27274d42953b1bfed894ed22da41e59dc/docs/%E5%89%8D%E7%AB%AF/mmmd11.md",
+        "raw_url": "https://github.com/aispeechfe/aispeechfe.github.io/raw/9d373ff27274d42953b1bfed894ed22da41e59dc/docs/%E5%89%8D%E7%AB%AF/mmmd11.md",
+        "contents_url": "https://api.github.com/repos/aispeechfe/aispeechfe.github.io/contents/docs/%E5%89%8D%E7%AB%AF/mmmd11.md?ref=9d373ff27274d42953b1bfed894ed22da41e59dc",
+        "patch": "@@ -1,6 +1,6 @@\n 1111\n 123\n-13\n+1311\n 3\n 1\n 31",
+        "previous_filename": "docs/前端/mmmd.md"
+      }
+    ],
+    "commit": {
+      "name": "aispeechfe",
+      "email": "46743804+aispeechfe@users.noreply.github.com",
+      "date": "2019-01-21T15:55:24Z"
+    }
+  },
+  {
+    "sha": "ea94e511aa6b39b951d21fff5b6e24900be20e39",
+    "files": [
+      {
+        "sha": "50b76962cb62732baa6fad1f7944077625e60d44",
+        "filename": "docs/前端/mmmd.md",
+        "status": "renamed",
+        "additions": 0,
+        "deletions": 0,
+        "changes": 0,
+        "blob_url": "https://github.com/aispeechfe/aispeechfe.github.io/blob/ea94e511aa6b39b951d21fff5b6e24900be20e39/docs/%E5%89%8D%E7%AB%AF/mmmd.md",
+        "raw_url": "https://github.com/aispeechfe/aispeechfe.github.io/raw/ea94e511aa6b39b951d21fff5b6e24900be20e39/docs/%E5%89%8D%E7%AB%AF/mmmd.md",
+        "contents_url": "https://api.github.com/repos/aispeechfe/aispeechfe.github.io/contents/docs/%E5%89%8D%E7%AB%AF/mmmd.md?ref=ea94e511aa6b39b951d21fff5b6e24900be20e39",
+        "previous_filename": "docs/前端/mmm.md"
+      }
+    ],
+    "commit": {
+      "name": "aispeechfe",
+      "email": "46743804+aispeechfe@users.noreply.github.com",
+      "date": "2019-01-21T15:54:15Z"
+    }
+  },
+  {
+    "sha": "11f32e2243aa17856df9075386644db5cea6a71a",
+    "files": [
+      {
+        "sha": "50b76962cb62732baa6fad1f7944077625e60d44",
+        "filename": "docs/前端/mmm.md",
+        "status": "modified",
+        "additions": 5,
+        "deletions": 0,
+        "changes": 5,
+        "blob_url": "https://github.com/aispeechfe/aispeechfe.github.io/blob/11f32e2243aa17856df9075386644db5cea6a71a/docs/%E5%89%8D%E7%AB%AF/mmm.md",
+        "raw_url": "https://github.com/aispeechfe/aispeechfe.github.io/raw/11f32e2243aa17856df9075386644db5cea6a71a/docs/%E5%89%8D%E7%AB%AF/mmm.md",
+        "contents_url": "https://api.github.com/repos/aispeechfe/aispeechfe.github.io/contents/docs/%E5%89%8D%E7%AB%AF/mmm.md?ref=11f32e2243aa17856df9075386644db5cea6a71a",
+        "patch": "@@ -1 +1,6 @@\n 1111\n+123\n+13\n+3\n+1\n+31"
+      }
+    ],
+    "commit": {
+      "name": "aispeechfe",
+      "email": "46743804+aispeechfe@users.noreply.github.com",
+      "date": "2019-01-21T15:48:38Z"
+    }
+  },
+  {
+    "sha": "0856ebed91a54696d25aab9ea3f544fa7ebf18bb",
+    "files": [
+      {
+        "sha": "5f2f16bfff90e6620509c0cf442e7a3586dad8fb",
+        "filename": "docs/前端/mmm.md",
+        "status": "added",
+        "additions": 1,
+        "deletions": 0,
+        "changes": 1,
+        "blob_url": "https://github.com/aispeechfe/aispeechfe.github.io/blob/0856ebed91a54696d25aab9ea3f544fa7ebf18bb/docs/%E5%89%8D%E7%AB%AF/mmm.md",
+        "raw_url": "https://github.com/aispeechfe/aispeechfe.github.io/raw/0856ebed91a54696d25aab9ea3f544fa7ebf18bb/docs/%E5%89%8D%E7%AB%AF/mmm.md",
+        "contents_url": "https://api.github.com/repos/aispeechfe/aispeechfe.github.io/contents/docs/%E5%89%8D%E7%AB%AF/mmm.md?ref=0856ebed91a54696d25aab9ea3f544fa7ebf18bb",
+        "patch": "@@ -0,0 +1 @@\n+1111"
+      }
+    ],
+    "commit": {
+      "name": "aispeechfe",
+      "email": "46743804+aispeechfe@users.noreply.github.com",
+      "date": "2019-01-21T15:47:52Z"
+    }
+  },
+  {
+    "sha": "95694c938b9185ba5e17c2e06aeaaf4cc1118944",
+    "files": [
+      {
+        "sha": "5f2f16bfff90e6620509c0cf442e7a3586dad8fb",
+        "filename": "docs/前端/的等我.md",
+        "status": "removed",
+        "additions": 0,
+        "deletions": 1,
+        "changes": 1,
+        "blob_url": "https://github.com/aispeechfe/aispeechfe.github.io/blob/7ce2071cad36da486fa5458f1edc7079113ac84a/docs/%E5%89%8D%E7%AB%AF/%E7%9A%84%E7%AD%89%E6%88%91.md",
+        "raw_url": "https://github.com/aispeechfe/aispeechfe.github.io/raw/7ce2071cad36da486fa5458f1edc7079113ac84a/docs/%E5%89%8D%E7%AB%AF/%E7%9A%84%E7%AD%89%E6%88%91.md",
+        "contents_url": "https://api.github.com/repos/aispeechfe/aispeechfe.github.io/contents/docs/%E5%89%8D%E7%AB%AF/%E7%9A%84%E7%AD%89%E6%88%91.md?ref=7ce2071cad36da486fa5458f1edc7079113ac84a",
+        "patch": "@@ -1 +0,0 @@\n-1111"
+      }
+    ],
+    "commit": {
+      "name": "aispeechfe",
+      "email": "46743804+aispeechfe@users.noreply.github.com",
+      "date": "2019-01-21T15:45:16Z"
+    }
+  },
+  {
+    "sha": "7ce2071cad36da486fa5458f1edc7079113ac84a",
+    "files": [
+      {
+        "sha": "5f2f16bfff90e6620509c0cf442e7a3586dad8fb",
+        "filename": "docs/前端/的等我.md",
+        "status": "added",
+        "additions": 1,
+        "deletions": 0,
+        "changes": 1,
+        "blob_url": "https://github.com/aispeechfe/aispeechfe.github.io/blob/7ce2071cad36da486fa5458f1edc7079113ac84a/docs/%E5%89%8D%E7%AB%AF/%E7%9A%84%E7%AD%89%E6%88%91.md",
+        "raw_url": "https://github.com/aispeechfe/aispeechfe.github.io/raw/7ce2071cad36da486fa5458f1edc7079113ac84a/docs/%E5%89%8D%E7%AB%AF/%E7%9A%84%E7%AD%89%E6%88%91.md",
+        "contents_url": "https://api.github.com/repos/aispeechfe/aispeechfe.github.io/contents/docs/%E5%89%8D%E7%AB%AF/%E7%9A%84%E7%AD%89%E6%88%91.md?ref=7ce2071cad36da486fa5458f1edc7079113ac84a",
+        "patch": "@@ -0,0 +1 @@\n+1111"
+      }
+    ],
+    "commit": {
+      "name": "aispeechfe",
+      "email": "46743804+aispeechfe@users.noreply.github.com",
+      "date": "2019-01-21T15:02:42Z"
+    }
+  },
+  {
+    "sha": "ccd9cd594e325747792187874cc5558a17964af7",
+    "files": [
+      {
+        "sha": "d00491fd7e5bb6fa28c517a0bb32b8b506539d4d",
+        "filename": "docs/前端/1122",
+        "status": "added",
+        "additions": 1,
+        "deletions": 0,
+        "changes": 1,
+        "blob_url": "https://github.com/aispeechfe/aispeechfe.github.io/blob/ccd9cd594e325747792187874cc5558a17964af7/docs/%E5%89%8D%E7%AB%AF/1122",
+        "raw_url": "https://github.com/aispeechfe/aispeechfe.github.io/raw/ccd9cd594e325747792187874cc5558a17964af7/docs/%E5%89%8D%E7%AB%AF/1122",
+        "contents_url": "https://api.github.com/repos/aispeechfe/aispeechfe.github.io/contents/docs/%E5%89%8D%E7%AB%AF/1122?ref=ccd9cd594e325747792187874cc5558a17964af7",
+        "patch": "@@ -0,0 +1 @@\n+1"
+      }
+    ],
+    "commit": {
+      "name": "aispeechfe",
+      "email": "46743804+aispeechfe@users.noreply.github.com",
+      "date": "2019-01-21T14:15:07Z"
+    }
+  }
+]

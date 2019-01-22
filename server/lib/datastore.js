@@ -2,7 +2,8 @@ const file = require("./files")
 
 module.exports = {
   check: (data, column, name, content) => {
-    let info = JSON.parse(file.readFileSync(`./data/docs.json`).toString()) 
+    let info = JSON.parse(file.readFileSync(`./server/config/docs.json`).toString())
+    console.log("datastore check", data.status)
     if (data.status == 'removed') {
       const idx = info[column].findIndex(m => m.name == name)
       info[column].splice(idx, 1)
@@ -25,7 +26,10 @@ module.exports = {
       info[column][idx].content = content
     }
     console.log(data.filename, info)
-    file.writeFileSync(`./data/docs.json`, JSON.stringify(info))
+    file.writeFileSync(`./server/config/docs.json`, JSON.stringify(info, null, 2))
     return info
+  },
+  checklastcommit: () => {
+    return file.readFileSync(`./server/config/commit.txt`).toString()
   }
 }

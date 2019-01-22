@@ -17,7 +17,7 @@ module.exports = {
     try {
       fs.unlinkSync(path)
     } catch(err) {
-      console.log(chalk.red(`err:${path} 路径不存在`))
+      console.log(chalk.yellow(`err:${path} 路径不存在`))
     }
   },
   readFileSync: path => {
@@ -34,5 +34,8 @@ module.exports = {
   },
   readdirSync: (path) => {
     return fs.readdirSync(path)
+  },
+  existsSync: (path) => {
+    return fs.existsSync(path)
   }
 }
