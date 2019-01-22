@@ -37,11 +37,9 @@ async function job() {
   // 1.拉取最新代码
   await git.pull('origin', 'master')
   // 2.拉取一天内的 commit
-  console.log(1)
   const listdocs = await repo.listCommits(githubconfig.owner, githubconfig.repo, '/docs', moment().subtract(1, 'days').format())
   // 3.检查最后一次处理的commit sha
   const sha = file.readFileSync(`./server/config/commit.txt`).toString()
-  console.log(2)
   // 4.过滤需要处理的commit sha
   const listsha = []
   for (var i = 0; i < listdocs.length; i++) {
@@ -55,7 +53,6 @@ async function job() {
     console.log(chalk.green(`complete~time:${new Date()};0 commits;`))
     return
   }
-  console.log(3)
   // 5.拉取commit信息，检查其中变动的file
   const listcommit = []
   const listfiles = []
@@ -144,7 +141,9 @@ async function job() {
   sortByTime(listall)
   let html = template.layoutIndex(listall, ['HOME'].concat(columns), 'HOME')
   file.writeFileSync(`./index.html`, html)
-  // 9.提交
+  // 9.记录更新的最后一个commit sha
+  file.writeFileSync(`./server/config/commit.txt`, listcommit[0].sha)
+  // 10.提交
   git.add('./*').commit(`auto build html;time:${new Date()};`).push('origin', 'master')
   console.log(chalk.green(`complete~time:${new Date()};${listcommit.length} commits;${listfiles.length} doc files;`))
 }
