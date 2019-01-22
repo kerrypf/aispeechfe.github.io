@@ -140,9 +140,6 @@ async function job() {
   let listall = []
   docsjson.map(m => {
     listall = listall.concat(m.mds)
-    listall = listall.concat(m.mds)
-    listall = listall.concat(m.mds)
-    listall = listall.concat(m.mds)
   })
   sortByTime(listall)
   // console.log(listall)
