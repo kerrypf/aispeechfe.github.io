@@ -4,21 +4,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title><% this.title %></title>
+  <title><% this.file.name %></title>
   <link rel="stylesheet" type="text/css" href="../../css/main.css">
 </head>
 <body>
   <section> 
     <div class="head">
       <div class="nav">
+        <a href="/index.html" class="<% this.file.column == 'HOME' ? 'active' : '' %>">HOME</a>
         <% for(var i = 0; i < this.addrs.length; i++) { %>
-          <a href="/subject/<% this.addrs[i] %>">
-            <% this.addrs[i] %>
-          </a>
+          <a href="/column/<% this.addrs[i] %>.html" class="<% this.file.column == this.addrs[i] ? 'active' : '' %>"><% this.addrs[i] %></a>
         <% } %>
       </div>
     </div>
     <div class="detail">
+      <p class="detail-info">
+        <% this.file.operator %> | <% this.file.date %>
+      </p>
+      <p class="detail-title"><% this.file.name %></p>
       <% this.content %>
     </div>
     <div class="bottom">

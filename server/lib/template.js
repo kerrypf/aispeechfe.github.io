@@ -19,12 +19,12 @@ module.exports = {
       addrs: addrs
     })
   },
-  layoutDetail: (content, addrs, title) => {
+  layoutDetail: (content, addrs, fileinfo) => {
     let template = file.readFileSync('./layout/detail.html')
     return TemplateEngine(template.toString(), {
       content: content,
-      title: title,
-      addrs: addrs
+      addrs: addrs,
+      file: fileinfo
     })
   }
 }

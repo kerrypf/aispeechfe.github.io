@@ -3,6 +3,8 @@ const moment = require("moment")
 const git = require("simple-git")()
 const MarkdownIt = require('markdown-it')
 
+const temp = require("../temp/temp.json")
+
 const repo = require("./lib/repo")
 const file = require("./lib/files")
 const github = require("./lib/github")
@@ -54,7 +56,7 @@ async function job() {
     return
   }
   // 5.拉取commit信息，检查其中变动的file
-  const listcommit = []
+  const listcommit = [] // temp
   const listfiles = []
   const samecheck = {}
   for (var i = 0; i < listsha.length; i++) {
@@ -102,13 +104,14 @@ async function job() {
       // 新增或者更新文档
       let mdbuff = file.readFileSync(_file.docspath)
       let content = md.render(mdbuff.toString())
-      let html = template.layoutDetail(content, columns, _file.name)
+      let html = template.layoutDetail(content, columns, _file)
       file.writeFileSync(_file.htmlpath, html)
 
       // 新增或者更新文档结构
       if (idx == -1) {
         _column.mds.push({
           name: _file.name,
+          column: _file.column,
           createtime: _file.date,
           content: content.substring(0, 200),
           operator: _file.operator
@@ -131,15 +134,19 @@ async function job() {
   columns.map(m => {
     const list = docsjson.find(d => d.name == m).mds
     let html = template.layoutColumn(list, columns, m)
-    file.writeFileSync(`./subject/${m}.html`, html)
+    file.writeFileSync(`./column/${m}.html`, html)
   })
   // 8.渲染首页
-  const listall = []
+  let listall = []
   docsjson.map(m => {
-    listall.concat(m.mds)
+    listall = listall.concat(m.mds)
+    listall = listall.concat(m.mds)
+    listall = listall.concat(m.mds)
+    listall = listall.concat(m.mds)
   })
   sortByTime(listall)
-  let html = template.layoutIndex(listall, ['HOME'].concat(columns), 'HOME')
+  // console.log(listall)
+  let html = template.layoutIndex(listall, columns, 'HOME')
   file.writeFileSync(`./index.html`, html)
   // 9.记录更新的最后一个commit sha
   file.writeFileSync(`./server/config/commit.txt`, listcommit[0].sha)

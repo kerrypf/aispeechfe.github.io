@@ -11,15 +11,15 @@
   <section> 
     <div class="head">
       <div class="nav">
-          <% for(var i = 0; i < this.addrs.length; i++) { %>
-            <a href="/subject/<% this.addrs[i] %>" class="<% this.title == this.addrs[i] ? 'active' : '' %>"><% this.addrs[i] %></a>
-          <% } %>
+        <a href="/index.html" class="<% this.title == 'HOME' ? 'active' : '' %>">HOME</a>
+        <% for(var i = 0; i < this.addrs.length; i++) { %>
+          <a href="/column/<% this.addrs[i] %>.html" class="<% this.title == this.addrs[i] ? 'active' : '' %>"><% this.addrs[i] %></a>
+        <% } %>
       </div>
     </div>
     <div class="banner">
       <div class="banner-text">
-        <!-- 思必驰技术团队 -->
-        123451
+        <% this.title %>
       </div>
     </div>
     <div class="list">
@@ -29,7 +29,7 @@
             <span class="post-date"><% this.list[i].createtime %></span>
           </span>
           <h2 class="post-title">
-            <a href="/files/<% this.title %>/<% this.list[i].name.replace('.md', '.html') %>" class="js-ajax-link">
+            <a href="/files/<% this.list[i].column %>/<% this.list[i].name %>.html" class="js-ajax-link">
               <% this.list[i].name %>
             </a>
           </h2>
@@ -37,7 +37,7 @@
             <% this.list[i].content %>
           </p>
           <span class="post-more">
-            <a href="/files/<% this.title %>/<% this.list[i].name.replace('.md', '.html') %>" class="js-ajax-link">
+            <a href="/files/<% this.list[i].column %>/<% this.list[i].name %>.html" class="js-ajax-link">
               Read More <i class="icon-arrow-right"></i>
             </a>
           </span>
