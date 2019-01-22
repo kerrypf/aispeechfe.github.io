@@ -13,18 +13,7 @@ const md = new MarkdownIt()
 
 module.exports = {
   login: async () => {
-    const token = github.getStoredGithubToken()
-
-    if (token) {
-      console.log(chalk.green('Authentication already exists~'))
-      // process.exit();
-      return
-    }
-
-    await github.setGithubCredentials()
-    await github.registerNewToken()
-
-    console.log(chalk.green('Login succesfully!'));
+    
   },
   // 如果 后面请求多了，可以改用 webhook+rbmq 
   checkcommit: async () => {

@@ -3,16 +3,6 @@ const path = require("path")
 const chalk = require("chalk")
 
 module.exports = {
-  getCurrentDirectoryBase: () => {
-    return path.basename(process.cwd())
-  },
-  directoryExits: filePath => {
-    try {
-      return fs.statSync(filePath).isDirectory();
-    } catch (err) {
-      return false
-    }
-  },
   removefile: path => {
     try {
       fs.unlinkSync(path)

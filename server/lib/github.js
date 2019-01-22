@@ -50,30 +50,5 @@ module.exports = {
       console.log('Error with the authentication', err)
       status.stop()
     })
-  },
-
-  githubAuth: token => {
-    octokit.authenticate({
-      type: 'oauth',
-      token: token
-    });
-  },
-
-  logout: id => {
-      const status = new Spinner('Logout you, please wait', ['⣾','⣽','⣻','⢿','⡿','⣟','⣯','⣷']);
-      status.start();
-
-      octokit.authorization.delete({id})
-          .then(result => {
-              conf.set('github.token', '');
-              conf.set('github.id', '');
-
-              console.log(chalk.green('Logout succesfully'));
-              status.stop();
-          })
-          .catch(err => {
-              console.log(chalk.red('Error with logout'), err);
-              status.stop();
-          });
   }
 }
