@@ -4,6 +4,7 @@ const MarkdownIt = require('markdown-it')
 const github = require("./lib/github")
 const file = require("./lib/files")
 const repo = require("./lib/repo")
+const datastore = require("./lib/datastore")
 const template = require("./lib/template")
 const { githubconfig } = require('./config/account')
 
@@ -30,7 +31,7 @@ module.exports = {
     
     const listdocsha = listdocs.map(m => m.sha)
     const listfilessha = listfiles.map(m => m.sha)
-    console.log(listdocsha, listfilessha)
+    // console.log(listdocsha, listfilessha)
     if (listdocsha.length > 0) {
       const sha = listdocsha[0]
       const hasbuild = listfilessha.find(m => m == sha) 
@@ -61,12 +62,18 @@ module.exports = {
       const title = info[2].replace('.md', '')
       
       m.htmlfilename = `./files/${column}/${title}.html`
+      
+      file.removefile(m.htmlfilename)
       if (m.status == 'removed') {
-        file.removefile(m.htmlfilename)
-      } else {
-        file.removefile(m.htmlfilename)
+        datastore.check(m, column)
+      } else if (m.status == 'renamed') {
         let data = file.readFileSync(`./${m.filename}`)
         let content = md.render(data.toString())
+        datastore.check(m, column, info[2], content.substring(0, 100))
+      } else {
+        let data = file.readFileSync(`./${m.filename}`)
+        let content = md.render(data.toString())
+        datastore.check(m, column, info[2], content.substring(0, 100))
         let html = template.layoutDetail(content, addrs, title)
         file.writeFileSync(m.htmlfilename, html)
       }
@@ -75,18 +82,19 @@ module.exports = {
     console.log(2)
     // 3.生成主题页静态文件
     const subjects =  file.readdirSync('./files')
-    console.log(subjects)
+    // console.log(subjects)
+    const docsdata = JSON.parse(file.readFileSync(`./data/docs.json`).toString()) 
     subjects.map(m => {
       if (m == '.DS_Store') { return }
       console.log(2, m)
-      let list = file.readdirSync(`./files/${m}`)
-      let html = template.layoutSubject(list, addrs)
+      // let list = file.readdirSync(`./files/${m}`)
+      let html = template.layoutSubject(m, docsdata[m], addrs)
       file.writeFileSync(`./subject/${m}.html`, html)
     })
     
     console.log(3)
     // 4.生成首页静态文件
-    let html = template.layoutSubject([], addrs)
-    file.writeFileSync(`./index.html`, html)
+    // let html = template.layoutSubject([], addrs)
+    // file.writeFileSync(`./index.html`, html)
   }
 }

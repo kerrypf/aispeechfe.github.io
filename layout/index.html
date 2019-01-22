@@ -12,21 +12,36 @@
     <div class="head">
       <div class="nav">
           <% for(var i = 0; i < this.addrs.length; i++) { %>
-            <a href="/subject/<% this.addrs[i] %>"><% this.addrs[i] %></a>
+            <a href="/subject/<% this.addrs[i] %>" class="<% this.title == this.addrs[i] ? 'active' : '' %>"><% this.addrs[i] %></a>
           <% } %>
       </div>
     </div>
     <div class="banner">
       <div class="banner-text">
         <!-- 思必驰技术团队 -->
-        12345
+        123451
       </div>
     </div>
     <div class="list">
       <% for(var i = 0; i < this.list.length; i++) { %>
-        <div class="item">
-          <% this.list[i] %>
-        </div>
+        <artilce class="item">
+          <span class="post-meta">
+            <span class="post-date"><% this.list[i].createtime %></span>
+          </span>
+          <h2 class="post-title">
+            <a href="/files/<% this.title %>/<% this.list[i].name.replace('.md', '.html') %>" class="js-ajax-link">
+              <% this.list[i].name %>
+            </a>
+          </h2>
+          <p class="post-excerpt">
+            <% this.list[i].content %>
+          </p>
+          <span class="post-more">
+            <a href="/files/<% this.title %>/<% this.list[i].name.replace('.md', '.html') %>" class="js-ajax-link">
+              Read More <i class="icon-arrow-right"></i>
+            </a>
+          </span>
+        </artilce>
       <% } %>
     </div>
     <div class="bottom">

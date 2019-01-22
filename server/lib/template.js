@@ -3,11 +3,12 @@ const file = require("./files")
 
 
 module.exports = {
-  layoutSubject: (list, addrs) => {
+  layoutSubject: (column, list, addrs) => {
+    console.log("layoutSubject", column, list, addrs)
     let template = file.readFileSync('./layout/index.html')
     return TemplateEngine(template.toString(), {
       list: list,
-      title: '111',
+      title: column,
       addrs: addrs
     })
   },

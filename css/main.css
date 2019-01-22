@@ -50,6 +50,9 @@ p {
   line-height: 60px;
   display: inline-block;
 }
+.head .nav .active {
+  border-bottom: 1px solid red;
+}
 
 .banner {
   height: 150px;
@@ -91,4 +94,36 @@ p {
   max-width: 768px;
   margin: 0 auto;
   word-break: break-all;
+}
+
+.list .item {
+  max-width: 768px;
+  margin: 0 auto;
+  display: block;
+  padding: 30px 0;
+}
+
+.list .item .post-title {
+  color: #000;
+  font-size: 32px;
+  font-weight: 700;
+  text-indent: -1px;
+}
+
+.list .post-meta {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #E63917;
+}
+
+.list .item .post-more a {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #363740;
+}
+
+.list .item .post-excerpt {
+
 }
