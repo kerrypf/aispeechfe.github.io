@@ -15,9 +15,14 @@
 
 
 #### 编辑一个你好世界的文章
-1.默认已经登录了，打开目录：https://github.com/aispeechfe/aispeechfe.github.io/tree/master/docs
+1.【打开编辑路径】默认已经登录了，打开目录：https://github.com/aispeechfe/aispeechfe.github.io/tree/master/docs
 
-2.点击【Create new file】进入编辑页面，编写标题和内容。然后在页面底部填写本地提交的标题和描述信息。
+2.【编辑一段文字】点击Create new file进入编辑页面，编写标题和内容。然后在页面底部填写本地提交的标题和描述信息。
+<img src="https://aispeechfe.github.io/docs/前端/imgs/menu.saveimg.savepath20190123101220.jpg" style="max-width:100%;">
+<img src="https://aispeechfe.github.io/docs/前端/imgs/menu.saveimg.savepath20190123101618.jpg" style="max-width:100%;">
+
+
+3.【添加一张图片】点击Create new file进入编辑页面，新建一个文件夹
 
 
 
