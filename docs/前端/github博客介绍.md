@@ -20,9 +20,16 @@
 2.【编辑一段文字】点击Create new file进入编辑页面，编写标题和内容。然后在页面底部填写本地提交的标题和描述信息。
 <img src="https://aispeechfe.github.io/docs/前端/imgs/menu.saveimg.savepath20190123101220.jpg" style="max-width:100%;">
 <img src="https://aispeechfe.github.io/docs/前端/imgs/menu.saveimg.savepath20190123101618.jpg" style="max-width:100%;">
-
+<img src="https://aispeechfe.github.io/docs/前端/imgs/menu.saveimg.savepath20190123101813.jpg" style="max-width:100%;">
 
 3.【添加一张图片】点击Create new file进入编辑页面，新建一个文件夹
+<img src="https://aispeechfe.github.io/docs/前端/imgs/menu.saveimg.savepath20190123101708.jpg" style="max-width:100%;">
+<img src="https://aispeechfe.github.io/docs/前端/imgs/menu.saveimg.savepath20190123102235.jpg" style="max-width:100%;">
+<img src="https://aispeechfe.github.io/docs/前端/imgs/menu.saveimg.savepath20190123102303.jpg" style="max-width:100%;">
+<img src="https://aispeechfe.github.io/docs/前端/imgs/menu.saveimg.savepath20190123102643.jpg" style="max-width:100%;">
+
+
+
 
 
 
