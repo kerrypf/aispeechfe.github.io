@@ -5,14 +5,14 @@
       {
         "name": "github博客介绍",
         "column": "前端",
-        "createtime": "2019-01-23T02:31:40Z",
+        "createtime": "January 23, 2019",
         "content": "<p>之前参考了下阿里云文档的设计，也采用github的管理文档方式，做了这个简单的博客。希望好用实用。</p>\n<p>阿里云文档地址：https://github.com/AlibabaCloudDocs</p>\n<h4>介绍下如何使用</h4>\n<p>1.登录github账号（没有的话，注册一个，应该不难）</p>\n<p>2.打开文档跟目录地址：https://github.com/aispe",
         "operator": "aispeechfe"
       },
       {
         "name": "编辑一个演示文档",
         "column": "前端",
-        "createtime": "2019-01-23T02:47:48Z",
+        "createtime": "January 23, 2019",
         "content": "<p>这是一个演示文档。</p>\n<img src=\"https://aispeechfe.github.io/docs/前端/imgs/images.jpg\" style=\"max-width:100%;\">\n",
         "operator": "aispeechfe"
       }
