@@ -14,6 +14,8 @@ const { githubconfig } = require('./config/account')
 
 const md = new MarkdownIt()
 
+// var ss = template.layoutDetail('123456', [1,2,3,4], { operator: 'operator', date: '1', name: '1' })
+// file.writeFileSync('./11.html', ss)
 login().then(async () => {
   console.log(chalk.green('\r\n\r\n\r\n\r\n ========== start =========='))
   job()

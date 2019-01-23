@@ -4,25 +4,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title><%= file.name %></title>
+  <title>编辑一个演示文档</title>
   <link rel="stylesheet" type="text/css" href="../../css/main.css">
 </head>
 <body>
   <section> 
     <div class="head">
       <div class="nav">
-        <a href="/index.html" class="<%= file.column == 'HOME' ? 'active' : '' %>">HOME</a>
-        <% for(var i = 0; i < addrs.length; i++) { %>
-          <a href="/column/<%= addrs[i] %>.html" class="<%= file.column == addrs[i] ? 'active' : '' %>"><%= addrs[i] %></a>
-        <% } %>
+        <a href="/index.html" class="">HOME</a>
+        
+          <a href="/column/前端.html" class="active">前端</a>
+        
       </div>
     </div>
     <div class="detail">
       <p class="detail-info">
-        <%= file.operator %> | <%= file.date %>
+        aispeechfe | 2019-01-23T02:47:48Z
       </p>
-      <p class="detail-title"><%= file.name %></p>
-      <%= content %>
+      <p class="detail-title">编辑一个演示文档</p>
+      &#60;p&#62;这是一个演示文档&#60;/p&#62;
+&#60;p&#62;&#38;lt;img src=&#38;quot;https://aispeechfe.github.io/docs/前端/imgs/images.jpg&#38;quot; style=&#38;quot;max-width:100%;&#38;quot;&#38;gt;&#60;/p&#62;
+
     </div>
     <div class="bottom">
       参考有赞网站 <a href="https://tech.youzan.com/" target="_blank">有赞</a>

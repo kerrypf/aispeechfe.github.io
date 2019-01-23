@@ -4,40 +4,40 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title><% this.title %></title>
+  <title><%= title %></title>
   <link rel="stylesheet" type="text/css" href="../css/main.css">
 </head>
 <body>
   <section> 
     <div class="head">
       <div class="nav">
-        <a href="/index.html" class="<% this.title == 'HOME' ? 'active' : '' %>">HOME</a>
-        <% for(var i = 0; i < this.addrs.length; i++) { %>
-          <a href="/column/<% this.addrs[i] %>.html" class="<% this.title == this.addrs[i] ? 'active' : '' %>"><% this.addrs[i] %></a>
+        <a href="/index.html" class="<%= title == 'HOME' ? 'active' : '' %>">HOME</a>
+        <% for(var i = 0; i < addrs.length; i++) { %>
+          <a href="/column/<%= addrs[i] %>.html" class="<%= title == addrs[i] ? 'active' : '' %>"><%= addrs[i] %></a>
         <% } %>
       </div>
     </div>
     <div class="banner">
       <div class="banner-text">
-        <% this.title %>
+        <%= title %>
       </div>
     </div>
     <div class="list">
-      <% for(var i = 0; i < this.list.length; i++) { %>
+      <% for(var i = 0; i < list.length; i++) { %>
         <artilce class="item">
           <span class="post-meta">
-            <span class="post-date"><% this.list[i].createtime %></span>
+            <span class="post-date"><%= list[i].createtime %></span>
           </span>
           <h2 class="post-title">
-            <a href="/files/<% this.list[i].column %>/<% this.list[i].name %>.html" class="js-ajax-link">
-              <% this.list[i].name %>
+            <a href="/files/<%= list[i].column %>/<%= list[i].name %>.html" class="js-ajax-link">
+              <%= list[i].name %>
             </a>
           </h2>
           <p class="post-excerpt">
-            <% this.list[i].content %>
+            <%= list[i].content %>
           </p>
           <span class="post-more">
-            <a href="/files/<% this.list[i].column %>/<% this.list[i].name %>.html" class="js-ajax-link">
+            <a href="/files/<%= list[i].column %>/<%= list[i].name %>.html" class="js-ajax-link">
               Read More <i class="icon-arrow-right"></i>
             </a>
           </span>
