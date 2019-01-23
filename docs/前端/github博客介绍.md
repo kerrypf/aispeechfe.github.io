@@ -29,6 +29,16 @@
 <img src="https://aispeechfe.github.io/docs/前端/imgs/menu.saveimg.savepath20190123102643.jpg" style="max-width:100%;">
 <img src="https://aispeechfe.github.io/docs/前端/imgs/menu.saveimg.savepath20190123104219.jpg" style="max-width:100%;">
 
+#### 为什么这样设计
+1.对于大多数人是没有开发经验的，所以，本地的markdown博客构建系统会需要敲打命令来做更新，还需要安装相应环境，这样就增加了使用难度了
+
+2.github的文件管理系统是极好的，可以直接作为编辑器和文件管理器来用
+
+3.唯一要做的一件事就是把github上更新的文件拉取下来，做下渲染，然后推到github上供他人浏览
+
+4.github域名是免费的
+
+
 #### 功能欠缺
 1.分页
 
@@ -37,6 +47,8 @@
 3.markdown样式不一致
 
 4.webhook方式触发构建
+
+5.seo功能
 
 如果没什么人用，就基本到此不用完善了吧=。=
 
