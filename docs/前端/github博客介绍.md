@@ -27,6 +27,7 @@
 <img src="https://aispeechfe.github.io/docs/前端/imgs/menu.saveimg.savepath20190123102235.jpg" style="max-width:100%;">
 <img src="https://aispeechfe.github.io/docs/前端/imgs/menu.saveimg.savepath20190123102303.jpg" style="max-width:100%;">
 <img src="https://aispeechfe.github.io/docs/前端/imgs/menu.saveimg.savepath20190123102643.jpg" style="max-width:100%;">
+<img src="https://aispeechfe.github.io/docs/前端/imgs/menu.saveimg.savepath20190123104219.jpg" style="max-width:100%;">
 
 
 
