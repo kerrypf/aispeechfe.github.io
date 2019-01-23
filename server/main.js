@@ -87,7 +87,6 @@ async function job() {
     console.log(chalk.green(`complete 没有文件更新~time:${new Date()};${listcommit.length} commits;0 doc files;`))
     return
   }
-  console.log(1)
   // 6.渲染详情页并且更新结构数据
   const columns =  file.readdirSync('./docs')
   let docsjson = JSON.parse(file.readFileSync(`./server/config/docs.json`).toString())
@@ -163,7 +162,7 @@ function initfile(commit, file, docspath) {
     htmlpath: `./files/${fileinfo[1]}/${fileinfo[2].replace('.md', '.html')}`,
     status: file.status,
     operator: commit.commit.name,
-    date: commit.commit.date,
+    date: moment(commit.commit.date).format('LL'),
     email: commit.commit.email
   }
 }

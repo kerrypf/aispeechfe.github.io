@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title><%= file.name %></title>
   <link rel="stylesheet" type="text/css" href="../../css/main.css">
+  <link rel="stylesheet" type="text/css" href="../../css/github-markdown.css">
 </head>
 <body>
   <section> 
@@ -22,7 +23,9 @@
         <%= file.operator %> | <%= file.date %>
       </p>
       <p class="detail-title"><%= file.name %></p>
-      <%- content %>
+      <div class="markdown-body">
+        <%- content %>
+      </div>
     </div>
     <div class="bottom">
       参考有赞网站 <a href="https://tech.youzan.com/" target="_blank">有赞</a>
