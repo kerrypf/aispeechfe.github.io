@@ -58,7 +58,7 @@ h2 {
   display: inline-block;
 }
 .head .nav .active {
-  border-bottom: 1px solid red;
+  border-bottom: 2px solid #9f7be1;
   color: #363740;
   font-weight: 700;
 }
@@ -93,12 +93,12 @@ h2 {
   width: 100%;
   text-align: center;
   font-size: 12px;
-  border-top: 1px solid #E1E2E6;
+  border-top: 1px solid #9f7be1;
   line-height: 50px;
 }
 
 .bottom a {
-  color: #2196f3;
+  color: #9f7be1;
 }
 
 .list {
@@ -128,7 +128,7 @@ h2 {
   display: block;
   font-size: 12px;
   font-weight: 600;
-  color: #E63917;
+  color: #9f7be1;
 }
 
 .list .item .post-more a {
@@ -144,8 +144,8 @@ h2 {
 
 .icon-arrow-right {
   width: 3px;
-  border-right: 1px solid red;
-  border-bottom: 1px solid red;
+  border-right: 1px solid #9f7be1;;
+  border-bottom: 1px solid #9f7be1;;
   transform: rotate(-45deg);
   display: inline-block;
   height: 3px;
@@ -167,7 +167,7 @@ h2 {
   display: block;
   font-size: 12px;
   font-weight: 600;
-  color: #E63917;
+  color: #9f7be1;
 }
 .detail-title {
   color: #000;
