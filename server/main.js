@@ -19,7 +19,7 @@ const md = new MarkdownIt({
 login().then(async () => {
   console.log(chalk.green('\r\n\r\n\r\n\r\n ========== start =========='))
   job()
-  setTimeout(() => {
+  setInterval(() => {
     console.log(chalk.green('\r\n\r\n\r\n\r\n ========== start =========='))
     job()
   }, 180*1000)
