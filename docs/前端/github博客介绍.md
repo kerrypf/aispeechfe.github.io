@@ -29,6 +29,12 @@
 <img src="https://aispeechfe.github.io/docs/前端/imgs/menu.saveimg.savepath20190123102643.jpg" style="max-width:100%;">
 <img src="https://aispeechfe.github.io/docs/前端/imgs/menu.saveimg.savepath20190123104219.jpg" style="max-width:100%;">
 
+#### 功能欠缺
+1.分页
+
+2.文章按时间排序
+
+如果没什么人用，就基本到此不用完善了=。=
 
 
 
