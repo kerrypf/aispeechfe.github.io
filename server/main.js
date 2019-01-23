@@ -12,10 +12,10 @@ const template = require("./lib/template")
 const { sortByTime } = require("./util/lang")
 const { githubconfig } = require('./config/account')
 
-const md = new MarkdownIt()
+const md = new MarkdownIt({
+  html: true
+})
 
-// var ss = template.layoutDetail('123456', [1,2,3,4], { operator: 'operator', date: '1', name: '1' })
-// file.writeFileSync('./11.html', ss)
 login().then(async () => {
   console.log(chalk.green('\r\n\r\n\r\n\r\n ========== start =========='))
   job()
@@ -87,6 +87,7 @@ async function job() {
     console.log(chalk.green(`complete 没有文件更新~time:${new Date()};${listcommit.length} commits;0 doc files;`))
     return
   }
+  console.log(1)
   // 6.渲染详情页并且更新结构数据
   const columns =  file.readdirSync('./docs')
   let docsjson = JSON.parse(file.readFileSync(`./server/config/docs.json`).toString())
