@@ -13,7 +13,7 @@
         "name": "演示",
         "column": "前端",
         "createtime": "2019-01-23T02:41:42Z",
-        "content": "<p>这是一个演示</p>\n",
+        "content": "<p>这是一个演示</p>\n<p>&lt;img src=&quot;https://aispeechfe.github.io/docs/前端/imgs/images.jpg&quot; style=&quot;max-width:100%;&quot;&gt;</p>\n",
         "operator": "aispeechfe"
       }
     ]
