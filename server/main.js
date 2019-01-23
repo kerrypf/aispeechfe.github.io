@@ -3,7 +3,7 @@ const moment = require("moment")
 const git = require("simple-git")()
 const MarkdownIt = require('markdown-it')
 
-const temp = require("../temp/temp.json")
+// const temp = require("../temp/temp.json")
 
 const repo = require("./lib/repo")
 const file = require("./lib/files")
@@ -52,7 +52,7 @@ async function job() {
     }
   }
   if (listsha.length == 0) {
-    console.log(chalk.green(`complete~time:${new Date()};0 commits;`))
+    console.log(chalk.green(`complete 没有commit更新~time:${new Date()};0 commits;`))
     return
   }
   // 5.拉取commit信息，检查其中变动的file
@@ -82,13 +82,12 @@ async function job() {
     })
   })
   if (listfiles.length == 0) {
-    console.log(chalk.green(`complete~time:${new Date()};${listcommit.length} commits;0 doc files;`))
+    console.log(chalk.green(`complete 没有文件更新~time:${new Date()};${listcommit.length} commits;0 doc files;`))
     return
   }
   // 6.渲染详情页并且更新结构数据
   const columns =  file.readdirSync('./docs')
   let docsjson = JSON.parse(file.readFileSync(`./server/config/docs.json`).toString())
-  // columns.unshift('index')
   listfiles.map(_file => {
     // 读取文档结构数据
     let _column = docsjson.find(m => m.name == _file.column)
@@ -99,7 +98,6 @@ async function job() {
       }
     }
     const idx = _column.mds.findIndex(m => m.name == _file.name)
-    // console.log(idx, _column)
     if (file.existsSync(_file.docspath)) {
       // 新增或者更新文档
       let mdbuff = file.readFileSync(_file.docspath)
@@ -149,7 +147,7 @@ async function job() {
   file.writeFileSync(`./server/config/commit.txt`, listcommit[0].sha)
   // 10.提交
   git.add('./*').commit(`auto build html;time:${new Date()};`).push('origin', 'master')
-  console.log(chalk.green(`complete~time:${new Date()};${listcommit.length} commits;${listfiles.length} doc files;`))
+  console.log(chalk.green(`complete 页面更新完成~time:${new Date()};${listcommit.length} commits;${listfiles.length} doc files;`))
 }
 
 
